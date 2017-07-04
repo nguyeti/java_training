@@ -12,15 +12,15 @@ class Noeud {
 }
 
 public class StackImplementation {
-    private Noeud top;
+    private Noeud head;
 
     public boolean isEmpty() {
-        return top == null;
+        return head == null;
     }
 
     public int peek() {
         try {
-            return top.data;
+            return head.data;
         } catch (NullPointerException e) {
             System.out.println("stack is empty");
             return -1;
@@ -29,16 +29,16 @@ public class StackImplementation {
 
     public void push(int data) {
         Noeud node = new Noeud(data);
-        if (top != null) {
-            node.next = top;
+        if (head != null) {
+            node.next = head;
         }
-        top = node;
+        head = node;
     }
 
     // null pas vérifié
     public int pop() {
-        int data = top.data;
-        top = top.next;
+        int data = head.data;
+        head = head.next;
         return data;
     }
 }

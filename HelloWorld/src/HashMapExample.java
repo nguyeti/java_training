@@ -27,7 +27,7 @@ public class HashMapExample {
             String value = values.getValue();
             //System.out.println(values);
 
-            System.out.println("KEY = " + key + " /// VALUE = " + value);
+            System.out.println("KEY = " + key.getName() + " /// VALUE = " + value);
         }
 
         // duplicate values YES
