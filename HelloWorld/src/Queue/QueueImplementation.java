@@ -1,3 +1,5 @@
+package Queue;
+
 /**
  * Created by nguyeti on 27/06/2017.
  */
@@ -46,7 +48,7 @@ public class QueueImplementation {
 
     public static void main(String[] args){
         QueueImplementation queue = new QueueImplementation();
-        //queue.head = new Node(3);
+        //queue.head = new Queue.Node(3);
         //System.out.println(queue.peek());
         queue.add(4);
         queue.add(40);

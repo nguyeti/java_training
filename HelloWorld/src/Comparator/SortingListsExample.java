@@ -1,3 +1,5 @@
+package Comparator;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -156,7 +158,7 @@ public class SortingListsExample {
             System.out.println(number);
         }
 
-        // sorting Country object
+        // sorting Comparator.Country object
         List<Country> countries = new ArrayList<>();
         Country fra = new Country(1, "France");
         Country bel = new Country(2, "Belgium");
@@ -174,9 +176,9 @@ public class SortingListsExample {
         }
         // soit créer un comparator soit tu implements comparable
         System.out.println("sorting name DESC");
-        /*Collections.sort(countries, new Comparator<Country>() {
+        /*Collections.sort(countries, new Comparator<Comparator.Country>() {
             @Override
-            public int compare(Country o1, Country o2) {
+            public int compare(Comparator.Country o1, Comparator.Country o2) {
                 return -o1.getName().compareTo(o2.getName());
             }
         });

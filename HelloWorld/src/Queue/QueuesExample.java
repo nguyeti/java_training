@@ -1,3 +1,5 @@
+package Queue;
+
 import sun.misc.Queue;
 
 import java.util.AbstractQueue;

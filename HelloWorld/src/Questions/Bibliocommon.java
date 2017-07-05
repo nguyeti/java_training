@@ -1,3 +1,5 @@
+package Questions;
+
 import java.util.*;
 
 /**
@@ -10,7 +12,7 @@ public class Bibliocommon {
         b.increment(a);
         System.out.println(a[a.length - 1]);
 
-        String text = "Hello my name is timo";
+        String text = "Questions.Hello my name is timo";
 
         String[] words = text.split(" ", -1);
         Map<Integer, String> unsortedMap = new LinkedHashMap<>();

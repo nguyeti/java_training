@@ -1,3 +1,5 @@
+package thread;
+
 /**
  * Created by nguyeti on 22/06/2017.
  */
@@ -6,7 +8,7 @@ class Runner2 implements Runnable {
     @Override
     public void run() {
         for(int i = 0; i < 10; i++){
-            System.out.println("Hello " + i);
+            System.out.println("Questions.Hello " + i);
 
             try {
                 Thread.sleep(200);

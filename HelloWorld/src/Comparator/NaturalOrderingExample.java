@@ -1,3 +1,5 @@
+package Comparator;
+
 import java.util.*;
 
 /**
@@ -17,7 +19,7 @@ class NBA implements Comparable<NBA> {
 
     @Override
     public String toString() {
-        return "NBA{" +
+        return "Comparator.NBA{" +
                 "name='" + name + '\'' +
                 '}';
     }
@@ -27,7 +29,7 @@ class NBA implements Comparable<NBA> {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        NBA nba = (NBA) o;
+        Comparator.NBA nba = (Comparator.NBA) o;
 
         return name != null ? name.equals(nba.name) : nba.name == null;
     }
